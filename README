@@ -4,16 +4,34 @@
 
 Geier, C. F., R. Terwilliger, T. Teslovich, K. Velanova, and B. Luna. “Immaturities in Reward Processing and Its Influence on Inhibitory Control in Adolescence.” Cerebral Cortex 20, no. 7 (July 1, 2010): 1613–29. doi:10.1093/cercor/bhp225.
 
+## Behavdata
+
+example:
+   1       182     1       400     7.5     reward108       108     5
+   2       185     -1      -1      19.5    reward532       532     11
+   3       181     1       400     25.5    reward007       7       13
+   4       161     1       467     31.5    neutral007      7       15
+
+columns: 
+ 1. trial num
+ 2. XDAT (catch, cue type and dot position)
+ 3. score (-1:drop, 0: incorrect, 1: correct, 2: error corrected)
+ 4. latency to first saccade in ms
+ 5. onset of cue (seconds)
+ 6. EPrime frame name (cue/condition and dot postion)
+ 7. dot position
+ 8. EPrime presentation number (includes fixations and catches)
+
 
 ## Missing Data
 ^ subj   ^ missing ^
-| sub007 |  r2     |
-| sub007 |  r3     |
-| sub007 |  r4     |
-| sub023 |  r4     |
-| sub023 |  r4     |
-| sub028 |  r3     |
-| sub028 |  r4     |
+| sub007 |  run 2  |
+| sub007 |  run 3  |
+| sub007 |  run 4  |
+| sub023 |  run 4  |
+| sub023 |  run 4  |
+| sub028 |  run 3  |
+| sub028 |  run 4  |
 
 ## Task
 coded in EPrime, recorded (XDATS) with ASL eye tracker
@@ -36,6 +54,10 @@ Each with two catch trial formats:
 Dot position is given in from left to right, 0 to 600.
 
 Fixations are repeats of 1.5s white centered cross
+
+## Analysis
+> Briefly, our model consisted of 6 orthogonal regressors of interest (reward cue, neutral cue, reward preparation, neutral preparation, reward saccade response, neutral saccade response; “correct AS trials only”). We also included regressors for reward and neutral error trials (consisting of the entire trial), regressors for baseline, linear, and nonlinear trends, as well as 6 motion parameters included as “nuisance” regressors. A unique estimated impulse response function (IRF, i.e., hemodynamic response function) for each regressor of interest (reward and neutral cue, preparation, and saccade; “correct AS trials only”) was determined by a weighted linear sum of 5 sine basis functions multiplied by a data determined least squares–estimated beta weight. The estimated IRF reflects the estimated BOLD response to a type of stimulus (e.g., the reward cue) after controlling for variations in the BOLD signal due to other regressors. We specified the duration of the estimated response from stimulus onset (time = 0) to 18-s poststimulus onset (13 TR), a sufficient duration for the estimated BOLD response to return to baseline, for each separate epoch of the trial. We made no assumptions about its specific shape beyond using zero as the start point. Several goodness-of-fit statistics were calculated including partial F-statistics for each regressor and t-scores comparing each of the 5 estimated beta weights with zero. 
+
 
 ## "ScanSheets"
 https://docs.google.com/spreadsheets/d/1kzNxuRPnyalaG5K66ADFIavJOYfQl5OXQSmudNwc0Ak/edit#gid=896164689

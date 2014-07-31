@@ -61,3 +61,7 @@ umount Raw
 DEBUG=1 ./extractScoring.pl $HOME/rcn/bea_res/Data/Tasks/RingRewardsAnti/Basic/*/*/Scored/Run*/*{fs,finalscoring}_*.xls
 # fix redudant trial number, skiped 3 and 24, 26 appears twice (once after 27)
 sed -ie '/26	26/d' txt/behave/10315.20070117.Anti.1.manual.txt
+
+
+# write demographic file
+grep ANTI txt/demographicsFromSQL.txt| awk '{print $1,$5,$6}' > ../demographics.txt
