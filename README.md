@@ -7,12 +7,14 @@ Geier, C. F., R. Terwilliger, T. Teslovich, K. Velanova, and B. Luna. “Immatur
 ## Behavdata
 
 example:
-   1       182     1       400     7.5     reward108       108     5
-   2       185     -1      -1      19.5    reward532       532     11
-   3       181     1       400     25.5    reward007       7       13
-   4       161     1       467     31.5    neutral007      7       15
+
+    1       182     1       400     7.5     reward108       108     5
+    2       185     -1      -1      19.5    reward532       532     11
+    3       181     1       400     25.5    reward007       7       13
+    4       161     1       467     31.5    neutral007      7       15
 
 columns: 
+
  1. trial num
  2. XDAT (catch, cue type and dot position)
  3. score (-1:drop, 0: incorrect, 1: correct, 2: error corrected)
@@ -24,7 +26,9 @@ columns:
 
 
 ## Missing Data
-^ subj   ^ missing ^
+
+| subj   | missing |
+| -----  | ------- |
 | sub007 |  run 2  |
 | sub007 |  run 3  |
 | sub007 |  run 4  |
@@ -67,6 +71,7 @@ Fixations are repeats of 1.5s white centered cross
 ## event timing
 
 |v1                      ||v2                      || v3                      | v4                    ||
+| -----  | -----          | -----  | -----          | -----  | -----          | -----  | -----         |
 | onset  | event          | onset  | event          | onset  | event          | onset  | event         |
 | 0      | neutral426     | 0      | neutral532     | 7.5    | reward108      | 4.5    | neutral108    |
 | 6      | reward007      | 6      | reward007      | 16.5   | neutralCatch2  | 13.5   | reward532     |
