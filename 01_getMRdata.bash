@@ -57,3 +57,7 @@ umount Raw
 # everything makes sense:
 # for n in *nii.gz; do read birc <<< $(3dNotes $n 2>/dev/null | perl -lne 'print $1  if m:../Raw/(\d{12})/:'); [ "$birc" = "${n:15:12}" ]; echo "$birc $n"; done
 
+# get scored files from xls
+DEBUG=1 ./extractScoring.pl $HOME/rcn/bea_res/Data/Tasks/RingRewardsAnti/Basic/*/*/Scored/Run*/*{fs,finalscoring}_*.xls
+# fix redudant trial number, skiped 3 and 24, 26 appears twice (once after 27)
+sed -ie '/26	26/d' txt/behave/10315.20070117.Anti.1.manual.txt
