@@ -59,8 +59,10 @@ Fixations are repeats of 1.5s white centered cross
 > Briefly, our model consisted of 6 orthogonal regressors of interest (reward cue, neutral cue, reward preparation, neutral preparation, reward saccade response, neutral saccade response; “correct AS trials only”). We also included regressors for reward and neutral error trials (consisting of the entire trial), regressors for baseline, linear, and nonlinear trends, as well as 6 motion parameters included as “nuisance” regressors. A unique estimated impulse response function (IRF, i.e., hemodynamic response function) for each regressor of interest (reward and neutral cue, preparation, and saccade; “correct AS trials only”) was determined by a weighted linear sum of 5 sine basis functions multiplied by a data determined least squares–estimated beta weight. The estimated IRF reflects the estimated BOLD response to a type of stimulus (e.g., the reward cue) after controlling for variations in the BOLD signal due to other regressors. We specified the duration of the estimated response from stimulus onset (time = 0) to 18-s poststimulus onset (13 TR), a sufficient duration for the estimated BOLD response to return to baseline, for each separate epoch of the trial. We made no assumptions about its specific shape beyond using zero as the start point. Several goodness-of-fit statistics were calculated including partial F-statistics for each regressor and t-scores comparing each of the 5 estimated beta weights with zero. 
 
 
-## "ScanSheets"
-https://docs.google.com/spreadsheets/d/1kzNxuRPnyalaG5K66ADFIavJOYfQl5OXQSmudNwc0Ak/edit#gid=896164689
+## Online info
+ * [ScanSheets](https://docs.google.com/spreadsheets/d/1kzNxuRPnyalaG5K66ADFIavJOYfQl5OXQSmudNwc0Ak/edit#gid=896164689)
+ * [Scripts](https://github.com/LabNeuroCogDevel/openfmri_ring_rew)
+### "ScanSheets"
 
 ## event timing
 
