@@ -22,7 +22,7 @@ for d in $beares/Data/Tasks/RingRewards$task/Basic/*/*/; do
  lunaid=$(basename $(dirname $d))
  scandate=$(basename $d)
  printf "$lunaid	$scandate	$task	"
- mysql -u lncd -p'B@ngal0re' -h lncddb.acct.upmchs.net  lunadb_nightly -BNe "
+ mysql -u lncd  -h lncddb.acct.upmchs.net  lunadb_nightly -BNe "
     select datediff(log.VisitDate,DateOfBirth)/365.25 as age,
           case sexID when 1 then 'M' when 2 then 'F' else '?' end as sex, 
           b.BIRCID, Diagnosed+Clinical
